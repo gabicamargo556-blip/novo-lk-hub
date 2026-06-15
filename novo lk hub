@@ -263,7 +263,7 @@ local function showDiscordInProgressBar()
 	local originalSize = progressPct.TextSize
 	local originalAlign = progressPct.TextXAlignment
 
-	progressPct.Text = "discord.gg/lasthub"
+	progressPct.Text = "https://discord.gg/CRZZ3k4wt"
 	progressPct.TextColor3 = Color3.fromRGB(255,0,0)
 	progressPct.TextSize = 13
 	progressPct.TextXAlignment = Enum.TextXAlignment.Center
@@ -557,7 +557,7 @@ local verLbl = Instance.new("TextLabel", topbar)
 verLbl.Size = UDim2.new(0, 130, 1, 0)
 verLbl.Position = UDim2.new(0, 100, 0, 0)
 verLbl.BackgroundTransparency = 1
-verLbl.Text = "discord.gg/lasthub"
+verLbl.Text = "https://discord.gg/CRZZ3k4wt"
 verLbl.TextColor3 = DIM
 verLbl.Font = Enum.Font.Gotham
 verLbl.TextSize = 9
@@ -2623,7 +2623,7 @@ local function setupChar(char)
         speedLbl.TextStrokeTransparency=0; speedLbl.TextStrokeColor3=Color3.new(0,0,0)
         local discordLbl=Instance.new("TextLabel",bb)
         discordLbl.Size=UDim2.new(1,0,0,28); discordLbl.Position=UDim2.new(0,0,0,26)
-        discordLbl.BackgroundTransparency=1; discordLbl.Text="discord.gg/lasthub"
+        discordLbl.BackgroundTransparency=1; discordLbl.Text="https://discord.gg/CRZZ3k4wt"
         discordLbl.TextColor3=Color3.fromRGB(255,0,0); discordLbl.Font=Enum.Font.GothamBold
         discordLbl.TextScaled=true; discordLbl.TextStrokeTransparency=0.1
         discordLbl.TextStrokeColor3=Color3.new(0,0,0)
