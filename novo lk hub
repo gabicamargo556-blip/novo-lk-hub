@@ -1677,6 +1677,7 @@ do
 		local dragStart,startPos,dragInput
 
 		btn.InputBegan:Connect(function(input)
+			if uiLocked then dragging=false return end
 			if input.UserInputType==Enum.UserInputType.Touch then
 				dragging=true
 				dragStart=input.Position
@@ -1691,12 +1692,14 @@ do
 		end)
 
 		btn.InputChanged:Connect(function(input)
+			if uiLocked then dragging=false return end
 			if input.UserInputType==Enum.UserInputType.Touch then
 				dragInput=input
 			end
 		end)
 
 		UIS.InputChanged:Connect(function(input)
+			if uiLocked then dragging=false return end
 			if dragging and input==dragInput then
 				local delta=input.Position-dragStart
 				btn.Position=UDim2.new(startPos.X.Scale,startPos.X.Offset+delta.X,startPos.Y.Scale,startPos.Y.Offset+delta.Y)
